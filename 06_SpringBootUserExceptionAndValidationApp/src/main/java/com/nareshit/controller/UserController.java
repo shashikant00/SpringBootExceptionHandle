@@ -25,6 +25,10 @@ public class UserController {
 	@Autowired
 	private UserService service;
 	
+                    @GetMapping("/")
+                  public String show(){
+                  return "Welcome";  
+                  }
 	@PostMapping("/signup")
 	public ResponseEntity<User> saveUser(@RequestBody @Valid UserRequest userRequest){
 		return new ResponseEntity<>(service.saveUser(userRequest),HttpStatus.CREATED);
