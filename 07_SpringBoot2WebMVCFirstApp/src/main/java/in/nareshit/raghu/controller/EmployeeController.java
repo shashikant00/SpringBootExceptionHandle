@@ -16,5 +16,15 @@ public class EmployeeController {
 		return "test";
 	}
 	
+	@GetMapping("/feature")
+	public String testPage12() {
+		return "feature";
+	}
+	
+	@GetMapping("/feature2")
+	public String testPage122() {
+		return "feature2";
+	}
+	
 
 }
