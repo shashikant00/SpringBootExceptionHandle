@@ -16,8 +16,5 @@ public class EmployeeController {
 		return "test";
 	}
 	
-	@GetMapping("/develop")
-	public String testPage22() {
-		return "develop";
-	}
+
 }
