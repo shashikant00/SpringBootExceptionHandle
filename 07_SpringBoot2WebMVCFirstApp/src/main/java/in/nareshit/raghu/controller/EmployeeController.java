@@ -10,4 +10,9 @@ public class EmployeeController {
 	public String showPage() {
 		return "EmpHome";
 	}
+	
+	@GetMapping("/test")
+	public String testPage() {
+		return "test";
+	}
 }
